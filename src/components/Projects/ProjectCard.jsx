@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
   const handleModal = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/v1/projects/${id}`
+        `https://l2-b2-frontend-path-assignment-6-server-starter-pack-chi.vercel.app/api/v1/projects/${id}`
       );
       const projectData = await response.json();
       setData(projectData);

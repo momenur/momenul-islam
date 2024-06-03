@@ -6,7 +6,9 @@ const Cart = ({ item: { blogName, blogImage, shortDescription, _id } }) => {
 
   const handleModal = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/v1/blogs/${id}`);
+      const response = await fetch(
+        `https://l2-b2-frontend-path-assignment-6-server-starter-pack-chi.vercel.app/api/v1/blogs/${id}`
+      );
       const blogsData = await response.json();
       setData(blogsData);
       document.getElementById(`modal-${id}`).showModal(); // Show the specific modal after setting the data
