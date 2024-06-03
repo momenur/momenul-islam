@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bannerIcon {
+        @apply inline-flex items-center justify-center w-16 h-16 text-xl text-gray-200 transition-all duration-300 bg-black bg-opacity-25 rounded-md cursor-pointer shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 hover:text-designColor;
+    }
+
+    .resumeLi {
+        @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
+    }
+
+    .bgOpacity {
+        @apply bg-black bg-opacity-40;
+    }
+
+    .contactInput {
+        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
+    }
+
+    .contactTextArea {
+        @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
+    }
+}
+
+.active {
+    color: white;
+    /* text-decoration: underline #ff014f; */
+    padding: 2px 5px;
+    border-bottom: 2px solid #ff014f;
+}
+
+.scrollbar-hide::-webkit-scrollbar{
+    display: none;
+}
+
+/* import Title from "../../Share/Title/Title";
+import ContactLeft from "./ContactLeft";
+
+const Contact = () => {
+    return (
+        <section id="contact" className="border-b-[1px] border-b-black pb-20">
+            <Title title="contact" description="Contact with me"></Title>
+            <div className="max-w-6xl mx-auto">
+                <div className="w-full">
+                    <div className="flex justify-between w-full h-auto">
+                        <ContactLeft></ContactLeft>
+
+                        <div className="w-[60%] h-full flex flex-col  items-center justify-center">
+                            <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-8 flex flex-col gap-8 justify-center">
+                                <form className="w-full">
+                                    <div className="flex flex-col gap-6 py-2">
+                                        <div className="flex gap-10">
+                                            <div className="flex flex-col w-1/2 gap-4">
+                                                <p className="text-sm tracking-wide text-gray-400 uppercase">your name</p>
+                                                <input className="contactInput" type="text" name="" id="" />
+                                            </div>
+                                            <div className="flex flex-col w-1/2 gap-4">
+                                                <p className="text-sm tracking-wide text-gray-400 uppercase">Phone Number</p>
+                                                <input className="contactInput" type="text" name="" id="" />
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-col w-full gap-4">
+                                            <p className="text-sm tracking-wide text-gray-400 uppercase">your email</p>
+                                            <input className="contactInput" type="email" name="" id="" />
+                                        </div>
+                                        <div className="flex flex-col w-full gap-4">
+                                            <p className="text-sm tracking-wide text-gray-400 uppercase">Subject</p>
+                                            <input className="contactInput" type="text" name="" id="" />
+                                        </div>
+                                        <div className="flex flex-col w-full gap-4">
+                                            <p className="text-sm tracking-wide text-gray-400 uppercase">message</p>
+                                            <textarea className="contactTextArea" name="" cols="30" rows="8"></textarea>
+                                        </div>
+                                        <div>
+                                            <button className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wide uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent">SEND MESSAGE</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    );
+};
+
+export default Contact; */
